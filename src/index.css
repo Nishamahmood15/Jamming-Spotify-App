@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-image: url("./assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color for the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the scrollbar thumb */
+  border-radius: 3px; /* Adjust the radius for a rounded thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color on hover */
+}
+/*---------------------------------------------------------------*/
+/*--------------------------- BUTTONS ---------------------------*/
+/*---------------------------------------------------------------*/
+
+.primary-button,
+.secondary-button,
+.primary-button {
+  @apply cursor-pointer w-40 py-2.5 rounded-full border-0 mt-5 bg-purple-700 text-center text-sm transition bg-opacity-70 text-white font-semibold hover:bg-purple-800;
+}
+.secondary-button {
+  @apply px-4 bg-custom rounded-full text-white text-sm font-semibold transition-all focus:outline-none;
+}
+.app-container {
+  padding: 0 17% 10% 17%;
+}
+.SearchResults {
+  height: 550px;
+  overflow-y: scroll;
+  padding: 0.88rem;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
